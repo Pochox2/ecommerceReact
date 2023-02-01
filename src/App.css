@@ -1,0 +1,60 @@
+
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#root {
+  position: absolute;
+  top: 0px;
+  margin: 0 auto;
+  text-align: center;
+  width: 100vh;
+}
+
+
+
+li {
+    list-style: none;
+    
+}
+
+header {
+  background-color: aqua;
+  width: 2600px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100vh;
+}
+
+
+.Navbar {
+ align-self: flex-end;
+  display: flex;
+}
+
+.Menu {
+  align-self: flex-end;
+  display: flex;
+    flex-direction: row;
+  }
+  
+  .menuItem {
+  padding: 20px;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.logo {
+  margin-right: 1200px;
+}
+
+#cartCesto {
+  height: 50px;
+  width: 70px;
+  margin-top: 20px;
+}
