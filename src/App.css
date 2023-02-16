@@ -8,6 +8,7 @@ html {
 #root {
   position: absolute;
   top: 0px;
+  left: 0px;
   margin: 0 auto;
   text-align: center;
   width: 100vh;
@@ -21,7 +22,7 @@ li {
 }
 
 header {
-  background-color: aqua;
+  background-color: rgb(74, 75, 75);
   width: 2600px;
 }
 
@@ -43,18 +44,74 @@ header {
     flex-direction: row;
   }
   
-  .menuItem {
+  .Navbar .menuItem {
   padding: 20px;
   font-size: 30px;
   margin-bottom: 50px;
+  color: antiquewhite;
+}
+
+.Navbar .menuItem:hover{
+    color: black;
 }
 
 .logo {
   margin-right: 200px;
+  margin-left: 20px;
+  height: 180px;
 }
 
 #cartCesto {
   height: 50px;
   width: 70px;
   margin-top: 20px;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100vh;
+  font-size: 20px;
+  margin-left: 200px;
+}
+
+.cardItem {
+  height: 500px;
+  outline: solid black 2px;
+  padding: 25px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardDescrip {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardImg {
+  width: 250px;
+  height: 350px;
+}
+
+.m-10 {
+  margin: 7px;
+}
+
+.detail {
+  display: flex;
+  padding: 30px;
+  outline: 2px solid black;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.detailImg {
+    height: 850px;
+}
+
+.detailDesc {
+  padding: 10px;
+  font-size: 30px;
 }

@@ -1,13 +1,13 @@
 import Cart from "../Cart/Cart"
-
+import { NavLink } from "react-router-dom"
 
 function Navbar() {
     return (
         <nav className="Navbar">
             <ul className="Menu">
-                <li className="menuItem">Inicio</li>
-                <li className="menuItem">Tienda</li>
-                <li className="menuItem">Contacto</li>
+                <NavLink to="/" className="menuItem">Inicio</NavLink>
+                <NavLink to="/categoria/bebidas" className="menuItem">Bebidas</NavLink>
+                <NavLink to="/categoria/ropa" className="menuItem">Ropa</NavLink>
             </ul>
             <Cart />
         </nav>

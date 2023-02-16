@@ -4,7 +4,7 @@ import Navbar from "../Navbar/Navbar"
     return (
         <header>
             <div className="header">
-            <img className="logo" src="../../../img/logo.png" width={200} />
+            <img className="logo" src="/public/img/logo1.png" width={200} />
             <Navbar />
             </div>
         </header>

@@ -1,5 +1,5 @@
 {
-  "homepage":"https://Pochox2.github.io/ecommerceReact" ,
+  "homepage": "https://Pochox2.github.io/ecommerceReact",
   "name": "ecommerce",
   "private": true,
   "version": "0.0.0",
@@ -12,8 +12,11 @@
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "bootstrap": "^5.2.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-bootstrap": "^2.7.1",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",
