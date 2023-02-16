@@ -101,6 +101,7 @@ header {
 
 .detail {
   display: flex;
+  width: 100vh;
   padding: 30px;
   outline: 2px solid black;
   margin-top: 50px;
