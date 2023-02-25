@@ -101,7 +101,8 @@ header {
 
 .detail {
   display: flex;
-  width: 100vh;
+  flex-direction: column;
+  width: 1000px;
   padding: 30px;
   outline: 2px solid black;
   margin-top: 50px;
@@ -115,4 +116,26 @@ header {
 .detailDesc {
   padding: 10px;
   font-size: 30px;
+}
+
+.detai {
+  display: flex;
+  flex-direction: row;
+}
+
+.operacionBtn {
+    width: 40px;
+    height: 30px;
+    margin: 5px;
+}
+
+.opContainer {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.addCart {
+  width: 140px;
+  font-size: 17px;
 }
