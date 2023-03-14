@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import {useParams} from "react-router-dom"
 import iFetch from "../../utils/iFetch"
 import ItemList from "../ItemList/ItemList"
+import Loader from "../Loader/Loader"
     
 function ItemListContainer() {
     const [productos, pintarProductos] = useState ([])
@@ -26,7 +27,7 @@ function ItemListContainer() {
     return (
         <>
             { cargando ?
-            <h2>Cargando..</h2>
+            <Loader/>
             :<>
             <ItemList productos={productos} />
             </>}        

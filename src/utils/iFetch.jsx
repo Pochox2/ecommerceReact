@@ -11,7 +11,7 @@ const iFetch = (id) => new Promise( (res, rej) => {
     if (condicion) {
         setTimeout(() => {
             res(id ? productos.find(producto=> id === producto.id) : productos)
-        }, 2000)
+        }, 800)
     } else {
         rej("Error al cargar productos")
     }

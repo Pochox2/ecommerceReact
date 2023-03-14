@@ -1,8 +1,13 @@
+import { NavLink } from "react-router-dom"
+import { useCartContext } from "../../context/CartContext"
 
     
-    function Cart() {
+    const Cart = () => {
+        const {cantTotal} = useCartContext()
         return (
-            <button id="cartCesto"><i id="cartCesto" className="bi bi-minecart"><span id="cartContador">0</span></i></button>
+           <NavLink to="/cart" >
+               <button id="cartCesto"><i id="cartCesto" className="bi bi-minecart"> { cantTotal() > 0 && cantTotal() } <span id="cartContador"></span></i></button>
+           </NavLink> 
         )
     }
 

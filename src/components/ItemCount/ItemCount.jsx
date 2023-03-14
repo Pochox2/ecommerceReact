@@ -1,4 +1,5 @@
 import { useState } from "react"
+import BuyButton from "../BuyButton/BuyButton"
 
 
 
@@ -35,6 +36,7 @@ const ItemCount =({initial= 1, stock=10, onAdd}) => {
             </div>
         </div>
         <div>
+            {/* <BuyButton className="addCart" onClick={()=>onAdd(count)} /> */}
             <button className="addCart" onClick={()=>onAdd(count)}>Agregar al carro</button>
         </div>
     </div>
