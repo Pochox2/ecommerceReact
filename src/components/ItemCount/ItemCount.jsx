@@ -1,7 +1,4 @@
 import { useState } from "react"
-import BuyButton from "../BuyButton/BuyButton"
-
-
 
 const ItemCount =({initial= 1, stock=10, onAdd}) => {
 
