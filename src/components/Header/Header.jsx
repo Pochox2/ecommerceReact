@@ -6,7 +6,7 @@ import Navbar from "../Navbar/Navbar"
         <header>
             <div className="header">
                 <div className="div_logo">
-                    <img className="logo" src="/public/img/logo1.png" width={200} />
+                    <img className="logo" src="/img/logo1.png" width={200} />
                 </div>
                 <div className="div_navbar">
                     <Navbar />

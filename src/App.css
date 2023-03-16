@@ -254,11 +254,24 @@ header {
 }
 
 .noproducts {
-  margin-bottom: 750px;
+  margin-bottom: 150px;
   font-size: 30px;
+}
+
+.volverI {
+  margin-bottom: 550px;
+  background-color: antiquewhite;
+  width: 130px;
+  height: 40px;
+  color: rgb(74, 75, 75);
+  font-size: 17px;
+  padding: 5px;
+  text-decoration: none;
 }
 
 .nopro_cont {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
