@@ -4,6 +4,7 @@ import { toast, ToastContainer } from "react-toastify"
 import { useCartContext } from "../../context/CartContext"
 import CartItems from "../CartItems/CartItems";
 import { Link } from "react-router-dom";
+import 'react-toastify/dist/ReactToastify.css';
 
 const CartContainer = () => {
     const [id, setId] = useState ("")
