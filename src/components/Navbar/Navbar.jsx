@@ -8,8 +8,8 @@ function Navbar() {
                 <NavLink to="/" className="menuItem">Inicio</NavLink>
                 <NavLink to="/categoria/bebidas" className="menuItem">Bebidas</NavLink>
                 <NavLink to="/categoria/ropa" className="menuItem">Ropa</NavLink>
+                <Cart />
             </ul>
-            <Cart />
         </nav>
     )
 }

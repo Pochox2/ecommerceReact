@@ -23,7 +23,7 @@ export const CartContextProv = ({children}) => {
         ])
     }
 
-    const precioTotal = () => CartGroup.reduce( (count, producto) => count += (producto.cantidad*producto.precio), 0)
+    const precioTotal = () => CartGroup.reduce( (count, producto) => count += (producto.cantidad*producto.Precio), 0)
 
     const cantTotal = () => CartGroup.reduce((count, producto) => count += producto.cantidad, 0)
 

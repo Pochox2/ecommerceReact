@@ -6,7 +6,7 @@ import { useCartContext } from "../../context/CartContext"
         const {cantTotal} = useCartContext()
         return (
            <NavLink to="/cart" >
-               <button id="cartCesto"><i id="cartCesto" className="bi bi-minecart"> { cantTotal() > 0 && cantTotal() } <span id="cartContador"></span></i></button>
+               <button id="cartCesto"><i id="cartCesto" className="cart_cesto bi bi-minecart"> { cantTotal() > 0 && cantTotal() } <span id="cartContador"></span></i></button>
            </NavLink> 
         )
     }

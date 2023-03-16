@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-// import { initFirebase } from '../firebase/config';
+import { initFirebase } from '../firebase/config';
 import App from './App'
 
-// initFirebase()
+initFirebase()
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(

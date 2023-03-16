@@ -20,11 +20,11 @@ function ItemDetail ({producto}) {
         <div className="detail">
         <div className="detai">
             <div >
-                <img className="detailImg" src={producto.img}/>
+                <img className="detailImg" src={producto.Imagen}/>
             </div>
             <div className="detailDesc">
-                <h2>{producto.nombre}</h2>
-                <p>{producto.desc}</p>
+                <h2>{producto.Nombre}</h2>
+                <p>{producto.Descripcion}</p>
             </div>
         </div>
             { isCount ?

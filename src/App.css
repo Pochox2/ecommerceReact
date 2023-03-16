@@ -29,12 +29,23 @@ header {
 .header {
   display: flex;
   flex-direction: row;
-  width: 100vh;
+  width: 2000px;
+}
+.div_logo {
+  width: 1000px;
+  display: flex;
+  align-items: first baseline;
+}
+
+.div_navbar {
+  display: flex;
+  width: 1000px;
+  justify-content: end;
 }
 
 
 .Navbar {
- align-self: flex-end;
+  align-self: flex-end;
   display: flex;
 }
 
@@ -45,14 +56,17 @@ header {
   }
   
   .Navbar .menuItem {
-  padding: 20px;
+  padding: 30px;
+  margin: 30px;
   font-size: 30px;
   margin-bottom: 50px;
   color: antiquewhite;
+  text-decoration: none;
 }
 
 .Navbar .menuItem:hover{
-    color: black;
+  border-radius: 15px;
+    background-color: black;
 }
 
 .logo {
@@ -64,30 +78,49 @@ header {
 #cartCesto {
   height: 50px;
   width: 70px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .items {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  width: 100vh;
+  width: 1800px;
   font-size: 20px;
   margin-left: 200px;
 }
 
+.cardTop {
+    font-size: 25px;
+}
+
+
 .cardItem {
-  height: 500px;
+  height: 530px;
   outline: solid black 2px;
-  padding: 25px;
-  margin: 10px;
+  padding: 35px;
+  margin: 90px;
   display: flex;
   flex-direction: column;
+}
+
+.cardBtn {
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  background-color: antiquewhite;
+
+}
+
+.cardBtn:hover {
+  background-color: rgb(74, 75, 75);
+  color: antiquewhite;
 }
 
 .cardDescrip {
   display: flex;
   flex-direction: column;
+  font-size: 22px;
 }
 
 .cardImg {
@@ -160,4 +193,72 @@ header {
   display: flex;
   justify-content: center;
   padding: 50px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 40px;
+  align-items: center;
+  background-color: rgb(74, 75, 75);
+  border: 1px solid rgb(74, 75, 75);
+}
+
+.form {
+  padding: 10px;
+  margin: 10px;
+  width: 400px;
+  background-color: antiquewhite;;
+}
+
+.form_tt {
+  color: antiquewhite;
+}
+
+.footer {
+  width: 2700px;
+  height: 100px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: antiquewhite;
+  margin-top: 165px;
+  background-color: rgb(74, 75, 75);
+}
+
+.cart_cont {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  width: 2000px;  
+}
+
+.btn_vaciar {
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  background-color: rgb(74, 75, 75);
+  color: antiquewhite;
+}
+
+.btn__form {
+  width: 120px;
+  height: 30px;
+  font-size: 15px;
+  background-color: antiquewhite;
+  color:  rgb(74, 75, 75);
+}
+
+.noproducts {
+  margin-bottom: 750px;
+  font-size: 30px;
+}
+
+.nopro_cont {
+  display: flex;
+  justify-content: center;
 }

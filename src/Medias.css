@@ -1,0 +1,40 @@
+
+@media screen and (max-width:2000px) {
+    .header {
+        width: 1500px;
+    }
+
+    .items {
+        width: 1700px;
+        margin-left: 50px;
+    }
+
+    .footer {
+        width: 2000px;
+    }
+    
+}
+
+@media screen and (max-width: 1500px) {
+    .header {
+        width: 600px;
+    }
+
+    .items {
+        width: 1300px;
+    }
+
+    .footer {
+        width: 1500px;
+    }
+
+    .cart_cont {
+        width: 1300px;
+    }
+
+}
+@media screen and (max-width: 1155px) {
+    .items {
+        width: 1100px;
+    }
+}

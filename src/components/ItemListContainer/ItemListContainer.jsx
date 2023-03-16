@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import {useParams} from "react-router-dom"
-import iFetch from "../../utils/iFetch"
+import {collection, getDocs, getFirestore, query, where} from "firebase/firestore"
 import ItemList from "../ItemList/ItemList"
 import Loader from "../Loader/Loader"
     
@@ -9,18 +9,25 @@ function ItemListContainer() {
     const [cargando, pintarCargando] = useState(true)
     const {idCategoria} = useParams ()
 
-    useEffect(() =>{
-        if (idCategoria){
-        iFetch()
-        .then(ans => pintarProductos(ans.filter(producto => producto.categoria === idCategoria)))
-        .catch(error => console.log(error))
-        .finally(()=> pintarCargando(false))
-    } else {
-        iFetch()
-        .then(ans => pintarProductos(ans))
-        .catch(error=> console.log(error))
-        .finally( ()=> pintarCargando(false))}
-    }, [idCategoria])
+
+    useEffect(()=>{
+        const db = getFirestore()
+        const queryCollec = collection(db, `Productos`)
+        const queryFilter = idCategoria ? query(queryCollec, where(`Categoria`, `==`, idCategoria)) : queryCollec;
+        if(db){
+            getDocs(queryFilter)
+            .then  (respCollection => { pintarProductos(respCollection.docs.map(producto => ({id:producto.id, ...producto.data()} )) )})
+            .catch (err => console.error(err))
+            .finally(()=> pintarCargando(false))}
+            
+            else {
+                getDocs(queryFilter)
+                .then(respCollection => pintarProductos(respCollection))
+                .catch(err => console.error(err))
+                .finally(() => pintarCargando(false))
+            }
+        }, [idCategoria])
+        
 
  
 
